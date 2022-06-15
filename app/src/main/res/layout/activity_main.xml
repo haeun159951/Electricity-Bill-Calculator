@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electricity Bill Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMorningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:text="Morning Usage(kwh)"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etMorningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:hint="Enter the usage"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvAfternoonUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Afternoon Usage (kwh)"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etAfternoonUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:hint="Enter the usage"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvEveningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Evening Usage (kwh)"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etEveningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:hint="Enter the usage"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+
+    <Switch
+        android:id="@+id/swRenewableEnergySources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Uses renewable energy sources?" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/btnRest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Charges Breakdown"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="Morning + Afternoon + Evening Usages"/>
+
+    <TextView
+        android:id="@+id/tvTotalUsage"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+
+        android:text="Total Usage Charges"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvSalesTax"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="Sales Tax + Environment Rebate"/>
+
+    <TextView
+        android:id="@+id/tvTotalRegulatoryCharges"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="Total Regulatory Charges"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvTotalBillAmount"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:text="Total Bill Amount"
+        android:textColor="@color/white" />
+
+</LinearLayout>
